@@ -23,4 +23,4 @@
 
 还有一些其它的页面就不一一展示了
 
-# 参考：https://www.bilibili.com/video/BV1nE41117BQ  （零基础玩转微信小程序【黑马程序员】）
+参考：https://www.bilibili.com/video/BV1nE41117BQ  （零基础玩转微信小程序【黑马程序员】）
