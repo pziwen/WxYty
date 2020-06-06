@@ -1,0 +1,11 @@
+page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  width: 70%;
+  background-color: var(--themeColor);
+  color: white;
+}

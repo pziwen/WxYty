@@ -1,0 +1,30 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <!-- 小导航工具 -->
+  <view class="collect_main">
+    <view class="collect_title">
+      <text class="collect_tips active">全部</text>
+      <text class="collect_tips">正在热卖</text>
+      <text class="collect_tips">即将上线</text>
+    </view>
+    <view class="collect_content">
+      <block wx:if="{{tabs[0].isActive}}">
+        <view class="first_tab">
+          <navigator class="goods_item" wx:for="{{collect}}" wx:key="goods_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+            <!-- 左侧 图片容器 -->
+            <veiw class="goods_img_wrap">
+              <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+            </veiw>
+            <!-- 右侧 商品容器 -->
+            <veiw class="goods_info_wrap">
+              <veiw class="goods_name">{{item.goods_name}}</veiw>
+              <veiw class="goods_price">￥{{item.goods_price}}</veiw>
+            </veiw>
+          </navigator>
+        </view>
+      </block>
+      <block wx:elif="{{tabs[1].isActive}}">仅开放收藏商品功能</block>
+      <block wx:elif="{{tabs[2].isActive}}">仅开放收藏商品功能</block>
+      <block wx:elif="{{tabs[3].isActive}}">仅开放收藏商品功能</block>
+    </view>
+  </view>
+</Tabs>

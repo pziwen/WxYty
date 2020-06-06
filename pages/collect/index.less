@@ -1,0 +1,58 @@
+page{
+  background-color: #f3f4f5;
+}
+.collect_main{
+  .collect_title{
+    padding: 40rpx 0 20rpx;
+    .collect_tips{
+      padding: 15rpx;
+      margin-left: 15rpx;
+      border: 1rpx solid #ccc;
+      background-color: #fff;
+    }
+    .active{
+      color: var(--themeColor);
+      border-color: currentColor;
+    }
+  }
+  .collect_content{
+    .first_tab{
+      .goods_item{
+        display: flex;
+        background-color: #fff;
+        width: 95%;
+        margin: 20rpx auto;
+        padding: 20rpx 10rpx;
+        border-radius: 10rpx;
+        box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+        .goods_img_wrap{
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          image{
+            width: 70%;
+          }
+        }
+        .goods_info_wrap{
+          flex: 3;
+          display: flex;
+          /*改变主轴方向*/
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 30rpx 0;
+          .goods_name{
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+          .goods_price{
+            color: var(--themeColor);
+            font-size: 32rpx;
+          }
+        }
+      }
+    }
+  }
+}

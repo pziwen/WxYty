@@ -1,0 +1,170 @@
+page{
+  padding-bottom: 90rpx;
+  position: relative;
+}
+/*轮播图*/
+.detail_swiper{
+  swiper{
+    height: 65vw;
+    text-align: center;
+    image{
+      width: 60%;
+    }
+  }
+}
+
+/*商品信息*/
+.goods_price{
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+}
+.goods_name_row{
+  display: flex;
+  .goods_name{
+    flex: 5;
+    color: #000;
+    font-size: 30rpx;
+    padding: 0 10rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .goods_collect{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #999;
+    .icon-shoucang1{
+      color: orange;
+    }
+  }
+}
+
+/*图文详情*/
+.goods_info{
+  margin-top: 10rpx;
+  border-top: 5rpx solid #ccc;
+  .goods_info_titel{
+    font-size: 32rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+    padding: 20rpx;
+  }
+}
+
+/*底部工具栏*/
+.btm_tool{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1px solid #ccc;
+  .tool_item{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    button{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  .btn_cart{
+    flex: 3;
+    background-color: #FFA500;
+    color: white;
+    font-weight: 600;
+  }
+  .btn_buy{
+    flex: 3;
+    background-color: var(--themeColor);
+    view,
+    button{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+/*登录modal*/
+.shade_wrap{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login_modal{
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 15rpx;
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .login_title{
+      font-size: 36rpx;
+      width: 100%;
+      text-align: center;
+    }
+    image{
+      width: 33%;
+    }
+    .login_btn_wrap{
+      .login_btn{
+        margin: 0;
+        padding: 0;
+        width: 30vw;
+        border: none;
+        border-radius: 15rpx;
+        font-size: 32rpx;
+        font-weight: normal;
+        color: white;
+        padding: 10rpx;
+      }
+      .login_yes{
+        button{
+          background-color: var(--themeColor);
+          margin-bottom: 20rpx;
+        }
+      }
+      navigator{
+        border-radius: 15rpx;
+        background-color: #00FF00;
+        text-align: center;
+      }
+    }
+  }
+}

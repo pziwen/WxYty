@@ -1,0 +1,20 @@
+@import './styles/iconfont.wxss';
+
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+page{
+  /* 定义主题颜色 */
+  --themeColor: #38b6ff;
+
+  /* 字体大小 假设设计稿为375px */
+  /* 1px = 2rpx */
+  font-size: 28rpx;
+}
+
+image{
+  width: 100%;
+}

@@ -1,0 +1,215 @@
+page{
+  background-color: #f3f4f5;
+  position: relative;
+}
+/*用户信息*/
+.user_info_wrap{
+  height: 45vh;
+  overflow: hidden;
+  position: relative;
+  .user_img_wrap{
+    height: 100%;
+    position: relative;
+    .user_bg{
+      width: 110vw;
+      position: absolute;
+      filter: blur(10rpx);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .user_info{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      .user_img{
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user_name{
+        color: white;
+        font-size: 40rpx;
+        margin-top: 40rpx;
+      }
+    }
+  }
+  .user_btn{
+    width: 150rpx;
+    height: 80rpx;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    navigator{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40rpx;
+      font-size: 38rpx;
+      color: white;
+      background-color: var(--themeColor);
+    }
+  }
+}
+
+/*主体*/
+.user_content{
+  position: relative;
+  .user_main{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40rpx;
+    margin-bottom: 30rpx;
+    /*历史足迹*/
+    .history_wrap{
+      background-color: #fff;
+      display: flex;
+      box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+      navigator{
+        flex: 1;
+        text-align: center;
+        padding: 10rpx 0;
+        .his_num{
+          color: var(--themeColor);
+        }
+        .his_name{
+          color: #666;
+        }
+      }
+    }
+    /*我的订单*/
+    .orders_wrap{
+      background-color: #fff;
+      margin-top: 30rpx;
+      box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+      .orders_title{
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+      }
+      .order_content{
+        display: flex;
+        navigator{
+          flex: 1;
+          text-align: center;
+          padding: 15rpx 0;
+          .iconfont{
+            color: var(--themeColor);
+            font-size: 40rpx;
+          }
+          .order_name{
+            color: #666;
+          }
+        }
+      }
+    }
+    .address_wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      padding: 20rpx;
+      box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+    }
+    .app_info_wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+      .app_info_item{
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+        button{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+          font-size: 28rpx;
+          font-weight: normal;
+          color: #000;
+          text-align: left;
+        }
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+    .recommend_wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      padding: 20rpx;
+      box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+      button{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-size: 28rpx;
+        font-weight: normal;
+        color: #000;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.shade_wrap{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login_modal{
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 15rpx;
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .login_title{
+      font-size: 36rpx;
+      width: 100%;
+      text-align: center;
+    }
+    image{
+      width: 33%;
+    }
+    .login_btn_wrap{
+      .login_btn{
+        margin: 0;
+        padding: 0;
+        width: 30vw;
+        border: none;
+        border-radius: 15rpx;
+        font-size: 32rpx;
+        font-weight: normal;
+        color: white;
+        padding: 10rpx;
+      }
+      .login_yes{
+        button{
+          background-color: var(--themeColor);
+          margin-bottom: 20rpx;
+        }
+      }
+      navigator{
+        border-radius: 15rpx;
+        background-color: #00FF00;
+        text-align: center;
+      }
+    }
+  }
+}

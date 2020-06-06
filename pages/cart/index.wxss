@@ -1,0 +1,175 @@
+page {
+  padding-bottom: 90rpx;
+  background-color: #f3f4f5;
+}
+/*添加地址*/
+.address_row .address_btn {
+  padding: 20rpx;
+}
+.address_row .address_btn button {
+  color: var(--themeColor);
+  border: 1rpx solid var(--themeColor);
+}
+.address_row .address_info_row {
+  padding: 20rpx;
+}
+.address_row .address_info_row .address_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address_row .address_info_row .address_text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+/*购物车*/
+.cart_content .cart_titel {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+.cart_content .cart_main {
+  /*购物车为空*/
+}
+.cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 10rpx;
+  width: 95%;
+  margin: 20rpx auto;
+  border-radius: 15rpx;
+  background-color: #fff;
+  box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, 0.2);
+}
+.cart_content .cart_main .cart_item .cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_item .cart_img_wrap {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_item .cart_img_wrap image {
+  width: 80%;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #333;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_warp {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_warp .goods_price {
+  font-size: 34rpx;
+  color: var(--themeColor);
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_warp .cart_num_tool {
+  display: flex;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_warp .cart_num_tool .num_edit {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_warp .cart_num_tool .goods_num {
+  min-width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_null_wrap {
+  width: 100%;
+  height: calc(100vh - 90rpx);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_null_wrap .cart_null_img {
+  display: block;
+  width: 70%;
+  margin: 0 auto 50rpx;
+  background-color: pi;
+}
+.cart_content .cart_main .cart_null_wrap .cart_null_text {
+  text-align: center;
+  font-size: 34rpx;
+}
+/*底部工具栏*/
+.footer_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+.footer_tool .all_chk_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_tool .total_price_wrap {
+  flex: 4;
+  padding-right: 15rpx;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer_tool .total_price_wrap .total_price .total_price_text {
+  color: var(--themeColor);
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.footer_tool .total_price_wrap view:nth-last-child(1) {
+  font-size: 24rpx;
+}
+.footer_tool .order_pay_wrap {
+  flex: 2;
+  background-color: var(--themeColor);
+  position: relative;
+}
+.footer_tool .order_pay_wrap view,
+.footer_tool .order_pay_wrap button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+}

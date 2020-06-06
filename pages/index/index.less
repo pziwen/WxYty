@@ -1,0 +1,53 @@
+// 轮播图
+.index_swiper{
+  swiper{
+    height: 340rpx;
+    image{
+      width: 100%;
+    }
+  }
+}
+
+// 导航
+.index_cate{
+  display: flex;
+  navigator{
+    flex: 1;
+    padding: 20rpx;
+    image{
+      width: 100%;
+    }
+  }
+}
+
+// 楼层
+.index_floor{
+  .floor_group{
+    padding: 20rpx 0;
+    .floor_titel{
+      image{
+        width: 100%;
+      }
+    }
+    .floor_list{
+      overflow: hidden;
+      navigator{
+        float: left;
+        width: 33.33%;
+        &:nth-last-child(-n+4){
+          // 第一张  缩放宽高比 232 / 386 = 33.33vw / height
+          height: 33.33vw * 386 / 232 / 2;
+          border-left: 10rpx solid white;
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+          border-bottom: 10rpx solid white;
+        }
+        image{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
